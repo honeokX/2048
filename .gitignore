@@ -1,3 +1,16 @@
-.sass-cache/
+# editors and ides
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# dependencies
 node_modules/
+
+# build output
 dist/
+
+# logs
+*.log*

@@ -62,9 +62,7 @@ function getVector(direction) {
 }
 
 function withinBounds(cell) {
-  return (
-    cell.x >= 0 && cell.x < GRID_SIZE && cell.y >= 0 && cell.y < GRID_SIZE
-  );
+  return cell.x >= 0 && cell.x < GRID_SIZE && cell.y >= 0 && cell.y < GRID_SIZE;
 }
 
 function findFarthestPosition(start, vector, grid) {

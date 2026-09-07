@@ -1,0 +1,6 @@
+# https://developers.cloudflare.com/workers/wrangler/configuration
+name = "2048"
+compatibility_date = "2026-09-07"
+
+[assets]
+directory = "./dist"

@@ -1,12 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import {
-  continueAfterWin,
-  createNewGame,
-  getSerializableGameState,
-  isTerminated,
-  loadGame,
-  moveGame,
-} from "./game";
+import { continueAfterWin, createNewGame, getSerializableGameState, isTerminated, loadGame, moveGame } from "./game";
 
 const BEST_SCORE_KEY = "bestScore";
 const GAME_STATE_KEY = "gameState";
@@ -75,10 +68,7 @@ export default function App() {
       if (game.over) {
         window.localStorage.removeItem(GAME_STATE_KEY);
       } else {
-        window.localStorage.setItem(
-          GAME_STATE_KEY,
-          JSON.stringify(getSerializableGameState(game))
-        );
+        window.localStorage.setItem(GAME_STATE_KEY, JSON.stringify(getSerializableGameState(game)));
       }
     } catch {
       // Ignore storage failures (private mode / restricted storage).
@@ -89,8 +79,7 @@ export default function App() {
     function handleKeyDown(event) {
       const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
       const direction = KEY_TO_DIRECTION[key];
-      const modifiers =
-        event.altKey || event.ctrlKey || event.metaKey || event.shiftKey;
+      const modifiers = event.altKey || event.ctrlKey || event.metaKey || event.shiftKey;
 
       if (modifiers) return;
 
@@ -139,9 +128,7 @@ export default function App() {
         <div className="scores-container">
           <div className="score-container">
             {game.score}
-            {game.scoreAddition > 0 ? (
-              <div className="score-addition">+{game.scoreAddition}</div>
-            ) : null}
+            {game.scoreAddition > 0 ? <div className="score-addition">+{game.scoreAddition}</div> : null}
           </div>
           <div className="best-container">{Math.max(bestScore, game.score)}</div>
         </div>
@@ -240,9 +227,8 @@ export default function App() {
       </div>
 
       <p className="game-explanation">
-        <strong className="important">How to play:</strong> Use your{" "}
-        <strong>arrow keys</strong> (or swipe). When two tiles with the same
-        number touch, they <strong>merge into one!</strong>
+        <strong className="important">How to play:</strong> Use your <strong>arrow keys</strong> (or swipe). When two
+        tiles with the same number touch, they <strong>merge into one!</strong>
       </p>
     </div>
   );
