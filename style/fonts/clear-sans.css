@@ -5,7 +5,6 @@
     url("ClearSans-Light-webfont.eot?#iefix") format("embedded-opentype"),
     url("ClearSans-Light-webfont.svg#clear_sans_lightregular") format("svg"),
     url("ClearSans-Light-webfont.woff") format("woff");
-  font-display: swap;
   font-weight: 200;
   font-style: normal;
 }
@@ -17,7 +16,6 @@
     url("ClearSans-Regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("ClearSans-Regular-webfont.svg#clear_sansregular") format("svg"),
     url("ClearSans-Regular-webfont.woff") format("woff");
-  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
@@ -29,7 +27,6 @@
     url("ClearSans-Bold-webfont.eot?#iefix") format("embedded-opentype"),
     url("ClearSans-Bold-webfont.svg#clear_sansbold") format("svg"),
     url("ClearSans-Bold-webfont.woff") format("woff");
-  font-display: swap;
   font-weight: 700;
   font-style: normal;
 }
