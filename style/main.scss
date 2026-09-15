@@ -183,6 +183,7 @@ hr {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    user-select: none;
 
     -ms-touch-action: none;
     touch-action: none;
@@ -479,6 +480,7 @@ hr {
 
 .restart-button {
   @include button;
+  background: #826d59;
   display: block;
   text-align: center;
   float: right;

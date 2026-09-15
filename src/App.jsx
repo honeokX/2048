@@ -122,7 +122,7 @@ export default function App() {
   }
 
   return (
-    <div className="container">
+    <main className="container">
       <div className="heading">
         <h1 className="title">2048</h1>
         <div className="scores-container">
@@ -230,6 +230,6 @@ export default function App() {
         <strong className="important">How to play:</strong> Use your <strong>arrow keys</strong> (or swipe). When two
         tiles with the same number touch, they <strong>merge into one!</strong>
       </p>
-    </div>
+    </main>
   );
 }
