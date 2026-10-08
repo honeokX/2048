@@ -34,7 +34,6 @@ jobs:
         run: |
           set -eExo pipefail
           pnpm install --frozen-lockfile
-          pnpm preview
           pnpm build
 
       - name: Deploy to cloudflare assets
