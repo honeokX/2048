@@ -6,7 +6,7 @@ body {
   padding: 0;
   background: #faf8ef;
   color: #776e65;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 18px;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 .heading:after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -117,11 +117,11 @@ h1.title {
 }
 
 .score-container:after {
-  content: "Score";
+  content: 'Score';
 }
 
 .best-container:after {
-  content: "Best";
+  content: 'Best';
 }
 
 p {
@@ -280,7 +280,7 @@ hr {
 }
 
 .grid-row:after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -705,7 +705,7 @@ hr {
 }
 
 .above-game:after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -878,7 +878,7 @@ hr {
   }
 
   .grid-row:after {
-    content: "";
+    content: '';
     display: block;
     clear: both;
   }
